@@ -23,7 +23,6 @@
 
 
 
-
 .header {
     height: 60px;
     background: linear-gradient(90.16deg, #37474D 7.4%, #7A7A7A 92.52%);
@@ -66,29 +65,114 @@
 }
 
 .position__wrap-image {
+    position: relative;
+    max-width: 471px;
+    margin: 0 auto;
+
     margin-bottom: 99px;
 }
 
-.position__image {}
+.position__image {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
+.position__rectangle {
+    position: absolute;
+    width: 100px;
+    height: 45px;
+
+    right: 32px;
+    bottom: -22px;
+    z-index: -1;
+
+    background: #F3FC7B;
+    border-radius: 5px;
+}
+
+
 
 .position__wrap-img {
+    position: relative;
+    max-width: 586px;
+    margin-left: auto;
+
     margin-bottom: 77px;
 }
 
-.position__img {}
+.position__img {
+    max-width: 100%;
+}
+
+.position__square {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+
+    left: -30px;
+    bottom: -18px;
+    z-index: -1;
+
+    background: #687272;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
 
 .position__wrap-picture {
+    position: relative;
     margin-bottom: 106px;
 }
 
-.position__picture {}
+.position__wrap-picture::before {
+    content: '';
+
+    position: absolute;
+    top: -35px;
+    left: -50px;
+
+    width: 100px;
+    height: 100px;
+    background: #A88660;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.position__wrap-picture::after {
+    content: '';
+
+    position: absolute;
+    top: -35px;
+    /*вопрос отступ сильно различается в макете и тут, сверял по pix per*/
+    right: 27px;
+
+    width: 100px;
+    height: 100px;
+    background: #F2EAC7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.position__picture {
+    max-width: 100%;
+}
+
+
 
 .position__wrap-pic {
+    position: relative;
+    text-align: center;
     margin-bottom: 161px;
 }
 
 .position__pic {}
 
-.position__wrap-imagery {}
 
-.position__imagery {}
+
+
+
+
+/* .position__wrap-imagery {
+    text-align: center;
+}
+
+.position__imagery {} */
