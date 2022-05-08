@@ -1,0 +1,48 @@
+.wrapper {
+    padding: 86px 0 102px;
+}
+
+.page {}
+
+
+
+.header {}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.header__logo {}
+
+
+
+.page__position {}
+
+
+
+.position {}
+
+.position__heading {}
+
+.position__wrap-image {}
+
+.position__image {}
+
+.position__wrap-img {}
+
+.position__img {}
+
+.position__wrap-picture {}
+
+.position__picture {}
+
+.position__wrap-pic {}
+
+.position__pic {}
+
+.position__wrap-imagery {}
+
+.position__imagery {}
