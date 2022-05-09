@@ -33,7 +33,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 777;
 }
 
 .header__link {
@@ -118,6 +118,8 @@
     border-radius: 20px;
 }
 
+
+
 .position__wrap-picture {
     position: relative;
     margin-bottom: 106px;
@@ -164,15 +166,96 @@
     margin-bottom: 161px;
 }
 
-.position__pic {}
+.position__wrap-pic::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 59px;
 
+    top: -30px;
+    /* right сильно изменил что бы сошлось на макете*/
+    right: 11px;
+    z-index: -1;
 
-
-
-
-
-/* .position__wrap-imagery {
-    text-align: center;
+    background: #F8CA0B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
 }
 
-.position__imagery {} */
+.position__wrap-pic::after {
+    content: '';
+
+    position: absolute;
+    width: 40px;
+    height: 80px;
+
+    left: 20px;
+    bottom: -19px;
+    z-index: -1;
+
+    background: #5EF3CE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.position__pic {
+    max-width: 100%;
+}
+
+
+
+/* ограничил бордер что бы не двигать элементы */
+.position__wrap-imagery {
+    position: relative;
+    max-width: 658px;
+    margin: 0 auto;
+}
+
+.position__wrap-imagery::before {
+    content: '';
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    left: -50px;
+    bottom: -33px;
+
+    background: #FFFEEA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.position__wrap-imagery::after {
+    content: '';
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    right: -29px;
+    bottom: -33px;
+
+    background: #C56E32;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.position__imagery {
+    max-width: 100%;
+}
+
+.position__circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background: #492540;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
