@@ -72,12 +72,9 @@
     margin-bottom: 99px;
 }
 
-.position__image {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-width: 100%;
-}
+.position__wrap-image::before {
+    content: '';
 
-.position__rectangle {
     position: absolute;
     width: 100px;
     height: 45px;
@@ -90,6 +87,11 @@
     border-radius: 5px;
 }
 
+.position__image {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
 
 
 .position__wrap-img {
@@ -100,11 +102,9 @@
     margin-bottom: 77px;
 }
 
-.position__img {
-    max-width: 100%;
-}
+.position__wrap-img::before {
+    content: '';
 
-.position__square {
     position: absolute;
     width: 80px;
     height: 75px;
@@ -118,10 +118,16 @@
     border-radius: 20px;
 }
 
+.position__img {
+    max-width: 100%;
+}
+
 
 
 .position__wrap-picture {
     position: relative;
+    max-width: 779px;
+
     margin-bottom: 106px;
 }
 
@@ -144,8 +150,7 @@
 
     position: absolute;
     top: -35px;
-    /*вопрос отступ сильно различается в макете и тут, сверял по pix per*/
-    right: 27px;
+    right: -34px;
 
     width: 100px;
     height: 100px;
@@ -162,19 +167,21 @@
 
 .position__wrap-pic {
     position: relative;
-    text-align: center;
+    max-width: 763px;
+    margin: 0 auto;
+
     margin-bottom: 161px;
 }
 
 .position__wrap-pic::before {
     content: '';
+
     position: absolute;
     width: 100px;
     height: 59px;
 
     top: -30px;
-    /* right сильно изменил что бы сошлось на макете*/
-    right: 11px;
+    right: -27px;
     z-index: -1;
 
     background: #F8CA0B;
@@ -189,7 +196,7 @@
     width: 40px;
     height: 80px;
 
-    left: 20px;
+    left: -20px;
     bottom: -19px;
     z-index: -1;
 
@@ -204,7 +211,6 @@
 
 
 
-/* ограничил бордер что бы не двигать элементы */
 .position__wrap-imagery {
     position: relative;
     max-width: 658px;
